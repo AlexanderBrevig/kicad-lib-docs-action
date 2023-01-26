@@ -1,5 +1,8 @@
 name: my workflow
 on: push
+permissions:
+  contents: read
+  pull-requests: write
 jobs:
   build:
     runs-on: ubuntu-latest
