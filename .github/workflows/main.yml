@@ -14,5 +14,6 @@ jobs:
         run: |
           git config --global user.name "kicad-lib-docs"
           git config --global user.email "kicad-lib-docs@users.noreply.github.com"
-          git commit -a -m "docs: kicad-lib-docs"
+          git add lib.md
+          git commit -m "docs: kicad-lib-docs"
           git push
