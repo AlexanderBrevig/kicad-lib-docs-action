@@ -8,4 +8,4 @@ jobs:
       - name: Check container
         uses: docker://alexanderbrevig/kicad-lib-docs:latest
         with:
-          args: /kicad-lib-docs/kicad-lib-docs symbols "My title" lib.kicad_sym lib.md
+          args: /kicad-lib-docs symbols "My title" lib.kicad_sym lib.md
