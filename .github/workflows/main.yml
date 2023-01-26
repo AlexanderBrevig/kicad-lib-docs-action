@@ -1,0 +1,12 @@
+on: [push]
+
+jobs:
+  kicad-lib-docs:
+    runs-on: ubuntu-latest
+    name: Testing
+    steps:
+      - name: Testing the action
+        id: hello
+        uses: alexanderbrevig/kicad-lib-docs@v2
+        with:
+          args: 'symbols "My title" lib.kicad_sym lib.md'
