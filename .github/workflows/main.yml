@@ -1,11 +1,12 @@
-name: my workflow
-on: push
+on: [push]
+
 jobs:
-  build:
+  kicad-lib-docs:
     runs-on: ubuntu-latest
+    name: Testing
     steps:
-      - uses: actions/checkout@master
-      - name: Check container
-        uses: docker://alexanderbrevig/kicad-lib-docs:latest
+      - name: Testing the action
+        id: hello
+        uses: alexanderbrevig/kicad-lib-docs@v0.1.0
         with:
-          args: ./kicad-lib-docs symbols "My title" lib.kicad_sym lib.md
+          args: kicad-lib-docs symbols "My title" lib.kicad_sym lib.md
