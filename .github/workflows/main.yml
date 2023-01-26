@@ -9,4 +9,4 @@ jobs:
         id: hello
         uses: alexanderbrevig/kicad-lib-docs@v0.1.0
         with:
-          args: 'symbols "My title" lib.kicad_sym lib.md'
+          args: 'kicad-lib-docs symbols "My title" lib.kicad_sym lib.md'
