@@ -9,3 +9,10 @@ jobs:
         uses: docker://alexanderbrevig/kicad-lib-docs:latest
         with:
           args: /kicad-lib-docs symbols "My title" lib.kicad_sym lib.md
+      - name: Commit md
+        if: github.event_name == 'push'
+        run: |
+          git config --global user.name "kicad-lib-docs"
+          git config --global user.email "kicad-lib-docs@users.noreply.github.com"
+          git commit -a -m "docs: kicad-lib-docs"
+          git push
