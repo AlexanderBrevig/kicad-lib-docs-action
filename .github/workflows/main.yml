@@ -7,6 +7,6 @@ jobs:
     steps:
       - name: Testing the action
         id: hello
-        uses: alexanderbrevig/kicad-lib-docs@v2
+        uses: alexanderbrevig/kicad-lib-docs
         with:
           args: 'symbols "My title" lib.kicad_sym lib.md'
